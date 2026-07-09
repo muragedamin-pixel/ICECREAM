@@ -403,8 +403,7 @@
     border-radius:50%;
     margin:0 auto 18px;
     box-shadow:inset -10px -10px 22px rgba(0,0,0,0.18), inset 8px 8px 16px rgba(255,255,255,0.3);
-    /* Placeholder for real photo — swap this div for:
-       <img src="your-flavor-photo.jpg" alt="Flavor name"> and keep class="flavor-swatch" for sizing */
+    object-fit:cover;
   }
   .flavor-card h3{
     font-size:1.15rem;
@@ -701,47 +700,46 @@
       </div>
       <span class="tag">On the menu today</span>
       <h2>Pick your swirl</h2>
-      <p>Each circle below is a stand-in for a real photo — swap in a close-up shot of the actual scoop and the texture does the selling for you.</p>
+      <p>Each circle below is a real photo of the actual scoop — the texture does the selling for you.</p>
     </div>
-    <div class="flavor-grid"
-      style="background-image url('ice4.jpg')";>
+    <div class="flavor-grid">
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-1"></div>
+        <img class="flavor-swatch" src="ice3.jpg" alt="Strawberry Fields ice cream">
         <h3>Strawberry Fields</h3>
         <p>Roasted strawberry ribbon, vanilla bean base</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-2"></div>
+        <img class="flavor-swatch" src="ice4.jpg" alt="Mint Grove ice cream">
         <h3>Mint Grove</h3>
         <p>Fresh garden mint, dark chocolate flecks</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-3"></div>
+        <img class="flavor-swatch" src="ice5.jpg" alt="Honey Butterscotch ice cream">
         <h3>Honey Butterscotch</h3>
         <p>Local honey, salted butterscotch swirl</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-4"></div>
+        <img class="flavor-swatch" src="ice6.jpg" alt="Blue Lagoon Sorbet ice cream">
         <h3>Blue Lagoon Sorbet</h3>
         <p>Blue curaçao sorbet, coconut cream ribbon</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-5"></div>
+        <img class="flavor-swatch" src="ice7.jpg" alt="Lavender Fog ice cream">
         <h3>Lavender Fog</h3>
         <p>Steeped lavender, white chocolate curls</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-6"></div>
+        <img class="flavor-swatch" src="ice8.jpg" alt="Spiced Peach ice cream">
         <h3>Spiced Peach</h3>
         <p>Grilled peach, cinnamon streusel crumble</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-7"></div>
+        <img class="flavor-swatch" src="ice9.jpg" alt="Cherry Cordial ice cream">
         <h3>Cherry Cordial</h3>
         <p>Dark cherry compote, chocolate shell bits</p>
       </div>
       <div class="flavor-card">
-        <div class="flavor-swatch swatch-8"></div>
+        <img class="flavor-swatch" src="ice1-1.jpg" alt="Salted Malt ice cream">
         <h3>Salted Malt</h3>
         <p>Toasted malt base, sea salt caramel swirl</p>
       </div>
@@ -758,7 +756,7 @@
     <div class="story-copy">
       <span class="tag">Our story</span>
       <h2>Started with one churn and a very stubborn opinion about vanilla.</h2>
-      <p>Scoop & Swirl opened as a two-person operation with a single ice cream churn and a firm belief that vanilla should never be an afterthought. Years later, the churn count has gone up — the belief hasn't changed.</p>
+      <p>Scoop & Swirl opened as a two-person operation with a single ice cream churn and a firm belief that vanilla should never be an afterthought. Years later, the churn count has gone up — but our commitment to quality hasn't budged.</p>
       <p>Every base is cooked in-house each morning, every mix-in is something we'd eat by the spoonful on its own, and every flavor gets tasted by the whole team before it earns a spot on the board.</p>
       <ul class="story-list">
         <li><span class="dot"></span> Milk and cream sourced from a farm 20 minutes away</li>
