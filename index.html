@@ -189,6 +189,7 @@
     border-radius:999px;
     margin-bottom:22px;
     backdrop-filter:blur(4px);
+    animation: fadeUpDisappear;
   }
   .hero h1{
     font-size:clamp(2.6rem, 5vw, 4.2rem);
@@ -196,11 +197,13 @@
     font-weight:700;
     color:var(--cream);
     text-shadow:0 4px 24px rgba(0,0,0,0.25);
+    animation: fadeUpDisappear;
   }
   .hero h1 .accent{
     color:var(--pink);
     position:relative;
     display:inline-block;
+    animation: fadeUpDisappear;
   }
   .hero h1 .accent svg{
     position:absolute;
@@ -213,6 +216,7 @@
     color:#F1E6E9;
     max-width:480px;
     line-height:1.65;
+    animation: fadeUpDisappear;
   }
   .hero-actions{
     margin-top:32px;
@@ -337,7 +341,8 @@
   @keyframes bob{
     0%,100%{transform:translateX(-50%) translateY(0);}
     50%{transform:translateX(-50%) translateY(-8px);}
-  }
+    
+  
   .drip-sprinkle{
     position:absolute;
     width:8px;height:8px;
@@ -358,11 +363,13 @@
     color:var(--cream);
     padding:90px 0 110px;
     position:relative;
+    animation: fadeUpDisappear;
   }
   .section-head{
     text-align:center;
     max-width:600px;
     margin:0 auto 56px;
+    animation: fadeUpDisappear;
   }
   .section-head .tag{
     color:var(--yellow);
@@ -370,11 +377,13 @@
     letter-spacing:0.08em;
     text-transform:uppercase;
     font-size:0.78rem;
+    animation: fadeUpDisappear;
   }
   .section-head h2{
     font-size:clamp(2rem,3.4vw,2.8rem);
     margin-top:10px;
     font-weight:600;
+    animation: fadeUpDisappear;
   }
   .flavors .section-head p{
     color:#D9CBDF;
@@ -393,10 +402,12 @@
     padding:28px 22px 24px;
     text-align:center;
     transition:transform .25s ease, background .25s ease;
+    animation: fadeUpDisappear;
   }
   .flavor-card:hover{
     transform:translateY(-6px);
     background:rgba(255,255,255,0.09);
+    amination: fadeUpDisappear;
   }
   .flavor-swatch{
     width:88px; height:88px;
@@ -404,16 +415,19 @@
     margin:0 auto 18px;
     box-shadow:inset -10px -10px 22px rgba(0,0,0,0.18), inset 8px 8px 16px rgba(255,255,255,0.3);
     object-fit:cover;
+    animation: fadeUpDisappear;
   }
   .flavor-card h3{
     font-size:1.15rem;
     font-weight:600;
     margin-bottom:6px;
+    animation: fadeUpDisappear;
   }
   .flavor-card p{
     font-size:0.85rem;
     color:#C9BAD1;
     line-height:1.5;
+    animation: fadeUpDisppear;
   }
   .swatch-1{background:radial-gradient(circle at 30% 30%, #FFD9E6, var(--pink) 75%);}
   .swatch-2{background:radial-gradient(circle at 30% 30%, #E4FFF4, var(--mint) 75%);}
@@ -641,6 +655,25 @@
   scroll-snap-type: Y mandatory;
   /* hide standard csrollbars for a cleaner app-like look*/
   scrollbar-width: none;
+  }
+  @keyframes{
+    0%{
+      opacity: 0;
+      transform: translate Y(20px);
+    }
+    15%{
+      opacity: 1;
+      transform: translate Y(0);
+    }
+    85%{
+      opacity: 0;
+      transform: translate Y(0);
+    }
+    100%{
+      opacity: 0;
+      transform: translate Y(0);
+    }
+  }
 </style>
 </head>
 <body>
@@ -670,7 +703,7 @@
   <div class="container hero-grid">
     <div>
       <span class="eyebrow">🍒 Scooped fresh daily, downtown</span>
-      <h1>Small batch ice cream, made with a big <span class="accent">swirl</span> of joy.</h1>
+      <h1 class="fade">Small batch ice cream, made with a big <span class="accent">swirl</span> of joy.</h1>
       <p class="lead">Real cream, real fruit, no shortcuts. Every flavor at Scoop & Swirl starts in our own kitchen — then gets a second act on your cone.</p>
       <div class="hero-actions">
         <a href="#flavors" class="btn-primary">See today's flavors</a>
