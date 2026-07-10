@@ -303,7 +303,7 @@
     z-index:3;
     animation-delay:0s;
   }
-  .scoop.s2{9
+  .scoop.s2{
     bottom:210px;
     width:170px; height:110px;
     background:radial-gradient(circle at 30% 25%, #E4FFF4, var(--mint) 70%);
@@ -340,8 +340,8 @@
   @keyframes bob{
     0%,100%{transform:translateX(-50%) translateY(0);}
     50%{transform:translateX(-50%) translateY(-8px);}
-    
-  
+  }
+
   .drip-sprinkle{
     position:absolute;
     width:8px;height:8px;
@@ -643,25 +643,25 @@
   }
   /* scroll snapping*/
   scroll-snap-type: Y mandatory;
-  /* hide standard csrollbars for a cleaner app-like look*/
+  /* hide standard scrollbars for a cleaner app-like look*/
   scrollbar-width: none;
-  }
+
   @keyframes fadeUpDisappear{
     0%{
       opacity: 0;
-      transform: translate Y(20px);
+      transform: translateY(20px);
     }
     15%{
       opacity: 1;
-      transform: translate Y(0);
+      transform: translateY(0);
     }
     85%{
       opacity: 0;
-      transform: translate Y(0);
+      transform: translateY(0);
     }
     100%{
       opacity: 0;
-      transform: translate Y(0);
+      transform: translateY(0);
     }
   }
 </style>
@@ -715,8 +715,7 @@
 </section>
 
 <!-- ---------- FLAVORS ---------- -->
-<section class="flavors" id="flavors"
-  style="background-image: url('back.png')";>
+<section class="flavors" id="flavors" style="background-image: url('back.png');">
   <div class="container">
     <div class="section-head">
       <div class="scoop-scene" aria-hidden="true">
@@ -776,8 +775,7 @@
 </section>
 
 <!-- ---------- STORY ---------- -->
-<section class="story" id="story"
-  style="background-image: url('bck.jpg')";>
+<section class="story" id="story" style="background-image: url('bck.jpg');">
   <div class="container story-grid">
     <div class="story-photo">
       [ Photo placeholder — shop interior or team shot ]
@@ -785,8 +783,8 @@
     <div class="story-copy">
       <span class="tag">Our story</span>
       <h2>Started with one churn and a very stubborn opinion about vanilla.</h2>
-      <p>Scoop & Swirl opened as a two-person operation with a single ice cream churn and a firm belief that vanilla should never be an afterthought. Years later, the churn count has gone up — but our commitment to quality hasn't budged.</p>
-      <p>Every base is cooked in-house each morning, every mix-in is something we'd eat by the spoonful on its own, and every flavor gets tasted by the whole team before it earns a spot on the board.</p>
+      <p>Scoop & Swirl opened as a two-person operation with a single ice cream churn and a firm belief that vanilla should never be an afterthought. Years later, the churn count has gone up — [...]
+      <p>Every base is cooked in-house each morning, every mix-in is something we'd eat by the spoonful on its own, and every flavor gets tasted by the whole team before it earns a spot on the bo[...]
       <ul class="story-list">
         <li><span class="dot"></span> Milk and cream sourced from a farm 20 minutes away</li>
         <li><span class="dot"></span> New seasonal flavor dropped every two weeks</li>
@@ -797,8 +795,7 @@
 </section>
 
 <!-- ---------- VISIT ---------- -->
-<section class="visit" id="visit"
-  style="background-image: url('bck2.jpg')";>
+<section class="visit" id="visit" style="background-image: url('bck2.jpg');">
   <div class="container">
     <div class="section-head">
       <span class="tag">Come say hi</span>
@@ -821,8 +818,7 @@
 </section>
 
 <!-- ---------- CTA BAND ---------- -->
-<section class="cta-band"
-  style="background-image: bck2.jpg";>
+<section class="cta-band" style="background-image: url('bck2.jpg');">
   <div class="container">
     <h2>Sunday's for sundaes. Every day, really.</h2>
     <p>Order ahead for pickup, or just walk in — we always keep a scoop waiting.</p>
